@@ -1,0 +1,82 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient($color-dark-blue-2, $color-dark-blue-1, $color-dark-blue);
+    height: 100vh;
+    width: 100%;
+}
+.player {
+    background-color: rgba($color-violet, 0.4);
+    color: $color-white;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 30rem;
+    height: 50rem;
+    backface-visibility: hidden;
+    box-shadow: 0 0 8px rgba($color-black, 0.15);
+
+    &__image-box {
+        backface-visibility: hidden;
+        height: 30rem;
+        position: relative;
+        width: 100%;
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        box-shadow: 0 0 8px 2px rgba($color-black, 0.2);
+    }
+    &__music {
+        text-align: center;
+        margin-bottom: 1rem;
+        &__name {
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+        &__artist {
+            font-size: 1.2rem;
+        }
+    }
+    &__image {
+        width: 100%;
+    }
+    &__controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__control {
+        cursor: pointer;
+        padding: 0.2rem;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        transition: all 0.4s;
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+        &:hover {
+            background-color: rgba($color-red, 1);
+            box-shadow: 0 0 8px rgba($color-black, 0.15);
+
+            // color: $color-dark-blue;
+        }
+    }
+    &__navigation {
+        display: flex;
+        margin-bottom: 1rem;
+        &__left {
+            margin-right: auto;
+        }
+        &__icon {
+            cursor: pointer;
+            width: 2rem;
+            height: 2rem;
+            transition: transform 0.4s;
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+    }
+}

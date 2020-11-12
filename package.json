@@ -1,0 +1,13 @@
+{
+    "name": "aula-1",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Rubalaine <kelvenizzy@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "watch:sass": "sass --watch src/scss/main.scss public/styles/style.css"
+    },
+    "devDependencies": {
+        "sass": "^1.29.0"
+    }
+}

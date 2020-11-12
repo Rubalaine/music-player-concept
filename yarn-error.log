@@ -1,0 +1,33 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add v1.22.10 info No lockfile found. [1/4] Resolving packages... [2/4] Fetching packages... [3/4] Linking dependencies... [4/4] Building fresh packages... info Visit https://yarnpkg.com/en/docs/cli/add for documentation about this command.
+
+PATH: 
+  /home/kelvenrubalaine/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.18.4
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
+
+npm manifest: 
+  {
+    "name": "aula-1",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Rubalaine <kelvenizzy@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
